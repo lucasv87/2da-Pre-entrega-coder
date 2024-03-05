@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+body{
+    background-color:green;
+}
+header{
+    background-color: rgb(7, 95, 7);
+    height: 150px;
+    width: 100%;
+    font-size: 22px;
+    padding: 5px;
+    font-family: 'Rubik', sans-serif;
+
+}
+header a{
+    color: white;
+    text-decoration-line: none;
+    text-align: justify;
+    
+}
+#logo{
+    margin-left: 50px;
+    float: left;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+.barra{
+    color: white;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra ul li{
+    color: white;
+    margin-inline: 20px;
+    list-style: none;
+    display: inline-block;
+}
+.call{
+    box-sizing: border-box;
+    display: grid;
+    background-color:green;
+    margin-right: 100px; 
+    color: white;
+    width: 40%;
+    text-align: justify;
+    float: right;
+    font-size: 30px;
+   
+}
+.call h1{
+    text-align:center;
+
+}
+.imgNosotros{
+    margin-left:15px;
+    display:block;
+}
+.titMaterialEstudio{
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 55px;
+    text-align: center;
+}
+.materialEstudio{
+    font-family: 'Rubik', sans-serif;
+   
+}
+.linksDrive a{
+    margin-left:145px;
+    background-color: white;
+    display: flex;
+    height: 50px;
+    width:350px;
+    text-decoration-line: none;
+    font-size:20px;
+    justify-content: center;
+    align-items:center;
+    color:rgb(0, 160, 40);
+    margin-bottom: 50px;
+}
+.materia1c{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.materia2c{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.materia3c{
+    display: inline-block; 
+    margin-bottom: 30px;
+}
+.materia4c{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.materiaycarrera{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.carreras{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.faqs ul li{
+    margin-left: 30px;
+    color: white;
+    list-style:disc;
+    font-size:20px;
+    justify-content:space-around;
+    margin-bottom: 50px
+}
+footer{
+    height: auto;
+    width: 100%;
+    background-color:  rgb(7, 95, 7);
+    text-align: center;
+}
+footer p{
+    color: white;
+    font-size: 30px;
+}
+footer .redes i{
+    font-size: 40px;
+    color: skyblue;
+    letter-spacing: 30px;
+}
+main h1{
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+    color: white;
+}
+.act span{
+    float: right;
+}
+.sumate{
+    color: white;
+    text-align:center
+}
+form{
+    flex-direction: row;
+    text-align: center;
+    
+}
