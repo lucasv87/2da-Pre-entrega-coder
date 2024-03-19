@@ -11,6 +11,7 @@
 body{
     background-color:green;
 }
+/* INICIO header */
 header{
     background-color: rgb(7, 95, 7);
     height: 150px;
@@ -44,6 +45,8 @@ header a{
     list-style: none;
     display: inline-block;
 }
+/* FIN header */
+/* index */
 .call{
     box-sizing: border-box;
     display: grid;
@@ -64,6 +67,7 @@ header a{
     margin-left:15px;
     display:block;
 }
+/* material estudio */
 .titMaterialEstudio{
     width: 100%;
     margin-bottom: 60px;
@@ -111,6 +115,8 @@ header a{
     display: inline-block;
     margin-bottom: 30px;
 }
+/* material estudio */
+
 .faqs ul li{
     margin-left: 30px;
     color: white;
