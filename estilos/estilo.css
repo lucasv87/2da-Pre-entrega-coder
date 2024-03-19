@@ -12,15 +12,6 @@ body{
     background-color:green;
 }
 /* INICIO header */
-header{
-    background-color: rgb(7, 95, 7);
-    height: 150px;
-    width: 100%;
-    font-size: 22px;
-    padding: 5px;
-    font-family: 'Rubik', sans-serif;
-
-}
 header a{
     color: white;
     text-decoration-line: none;
@@ -45,13 +36,22 @@ header a{
     list-style: none;
     display: inline-block;
 }
+header{
+    background-color: rgb(7, 95, 7);
+    height: 150px; 
+    width: 100%;
+    font-size: 22px;
+    padding: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+/* @media (min-width:400px) and (max-width:700px) {header}*/ 
+
 /* FIN header */
 /* index */
 .call{
     box-sizing: border-box;
     display: grid;
     background-color:green;
-    margin-right: 100px; 
     color: white;
     width: 40%;
     text-align: justify;
@@ -63,9 +63,10 @@ header a{
     text-align:center;
 
 }
-.imgNosotros{
-    margin-left:15px;
-    display:block;
+#carouselExampleControls{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 25px;
 }
 /* material estudio */
 .titMaterialEstudio{
@@ -73,31 +74,38 @@ header a{
     margin-bottom: 60px;
     margin-top: 55px;
     text-align: center;
+    font-size:55px;
 }
 .materialEstudio{
     font-family: 'Rubik', sans-serif;
    
 }
 .linksDrive a{
-    margin-left:145px;
-    background-color: white;
-    display: flex;
+    margin-left:155px;
     height: 50px;
     width:350px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
     text-decoration-line: none;
     font-size:20px;
     justify-content: center;
     align-items:center;
     color:rgb(0, 160, 40);
     margin-bottom: 50px;
+    align-content: space-evenly;
+    flex-wrap: nowrap;
+
 }
 .materia1c{
     display: inline-block;
     margin-bottom: 30px;
+
 }
 .materia2c{
     display: inline-block;
     margin-bottom: 30px;
+
 }
 .materia3c{
     display: inline-block; 
@@ -115,8 +123,6 @@ header a{
     display: inline-block;
     margin-bottom: 30px;
 }
-/* material estudio */
-
 .faqs ul li{
     margin-left: 30px;
     color: white;
@@ -157,4 +163,99 @@ form{
     flex-direction: row;
     text-align: center;
     
+}
+/*FLEXBOX ACTIVIDADES*/
+#QueHacemos{
+    display: grid;
+    padding: 70px;
+    color:white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 7% 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "Titact Titact Titact Titact"
+    "iname1 iname1 tit1 tit1"
+    "iname2 iname2 tit1 tit1"
+    "tit2 tit2 charla1 charla1"
+    "tit2 tit2 charla2 charla2";
+    grid-gap: 15px;
+}
+.TitQueHacemos{
+    grid-area: Titact;
+    
+}
+.img1{
+    grid-area: iname1;
+    margin:auto;
+    width:80%;
+    height: 80%;
+}
+.img2{ 
+    grid-area: iname2;
+    margin:auto;
+    width:80%;
+    height: 80%;
+}
+.img3{
+    grid-area: charla1;
+    margin:auto;
+    width:80%;
+    height: 80%;
+}
+.img4{ 
+    grid-area: charla2;
+    margin:auto;
+    width:80%;
+    height: 80%;
+}
+.tit1{
+    grid-area: tit1;
+    margin:auto;
+    font-size: 30px;   
+}
+.tit2{
+    grid-area: tit2;
+    justify-content: center;
+    font-size: 30px; 
+}
+.subt{ 
+    text-align: center;
+    margin-bottom:50px;
+    margin-top:20px;
+    
+}
+
+@media only screen and (min-width:480px) {
+    #QueHacemos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:100px 1fr 1fr 1fr 1fr;
+    }
+    .TitQueHacemos{
+        grid-column:1/5;
+        grid-row:1/2
+    }
+    .img1{
+        grid-column:1/2;
+        grid-row:2/3
+    }
+    
+    .img2{ 
+        grid-column:1/2;
+        grid-row:3/4
+    }
+    .img3{
+        grid-column:2/2;
+        grid-row: 4/5
+    }
+    .img4{ 
+        grid-column:2/2;
+        grid-row:5/5
+    }
+    .tit1{
+        grid-column:2/2;
+        grid-row:2/4
+    }
+    .tit2{
+        grid-column:1/2;
+        grid-row:4/6
+    }
 }
